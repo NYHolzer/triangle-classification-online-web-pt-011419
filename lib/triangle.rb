@@ -15,7 +15,7 @@ class Triangle
     if @s1 <= (@s2 + @s3) || @s2 <= (@s1 + @s3) || @s3 <= (@s1 + @s2)
       raise TriangleError
     elsif sides.length == 1
-    binding.pry
+      binding.pry
       self.kind = :equilateral 
     elsif sides.length == 2 
       self.kind = :isosceles
