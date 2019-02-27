@@ -11,7 +11,7 @@ class Triangle
   
   def kind
     @sides.uniq!
-    if @s1 <= @s2 + @s3 || @s2 <= @s1 + @s3 || @s3 <= @s1 + @s2
+    if @s1 <= (@s2 + @s3) || @s2 <= (@s1 + @s3) || @s3 <= @s1 + @s2
       raise TriangleError
     elsif sides.length == 1
       self.kind = :equilateral 
