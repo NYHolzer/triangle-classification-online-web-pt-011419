@@ -1,4 +1,5 @@
 require 'pry'
+
 class Triangle
   attr_accessor :kind, :sides
   attr_reader :s1, :s2, :s3
