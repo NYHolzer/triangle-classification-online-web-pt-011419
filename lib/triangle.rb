@@ -14,7 +14,6 @@ class Triangle
   def kind
     @sides.uniq!
     if sides.length == 1
-      binding.pry
       self.kind = :equilateral 
     elsif sides.length == 2 
       self.kind = :isosceles
